@@ -9,6 +9,17 @@ $light_amount: 20%;
 //styles
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=DM+Sans:opsz,wght@9..40,300&family=IBM+Plex+Mono:wght@200&family=Montserrat&family=Mukta:wght@300&family=Oswald&display=swap');
 
+// mixins
+@mixin Font_style(){
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+
 // Стили хедера
 header {
   height: $header-height;
@@ -115,20 +126,19 @@ footer {
     flex: 1 1 auto;
 
     a{
+      text-decoration: none;
       img{
         margin-bottom: 0;
       }
     }
-     
-    p{
-      font-family: 'Bricolage Grotesque', sans-serif;
-      font-family: 'DM Sans', sans-serif;
-      font-family: 'IBM Plex Mono', monospace;
-      font-family: 'Montserrat', sans-serif;
-      font-family: 'Mukta', sans-serif;
-      font-family: 'Oswald', sans-serif;
-      font-size: 100px;
-    }
+    span{ 
+     p{
+       @include Font_style()
+       text-decoration: none;
+     }
+   } 
   }
 
-  
+  .zagalovok{
+    @include Font_style()
+  }
