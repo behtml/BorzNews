@@ -1,0 +1,104 @@
+// Variables
+$header-height: 60px;
+$header-background: #333333;
+$header-text-color: #ffffff;
+$footer-background: #333333;
+$footer-text-color: #ffffff;
+$light_amount: 20%;
+ 
+//mixins
+
+
+// Стили хедера
+header {
+  height: $header-height;
+  background-color: $header-background;
+  color: $header-text-color;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  nav {
+    padding: 150px;
+    width: auto;
+
+    ul {
+      list-style-type: none;
+      white-space: nowrap;
+
+      li {
+        display: inline-block;
+        padding-left: 90px;
+
+        a {
+          color: $header-text-color;
+          text-decoration: none;
+          font-family: 'Bricolage Grotesque', sans-serif;
+          font-family: 'DM Sans', sans-serif;
+          font-family: 'IBM Plex Mono', monospace;
+          font-family: 'Montserrat', sans-serif;
+          font-family: 'Mukta', sans-serif;
+
+          &:hover {
+            color: #9b9e9e;
+          }
+        }
+      }
+    }
+
+    // Добавленный стиль для неупорядоченного списка
+   
+    
+  }
+}
+
+// Стили футера
+footer {
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  
+      p {
+        margin: 0;
+        flex: 1;
+      }
+  
+      .footer-links {
+        flex: 1;
+        padding: left 70px;;
+  
+        a {
+          color: $footer-text-color;
+          text-decoration: none;
+          margin-left: 10px;
+          font-family: 'Bricolage Grotesque', sans-serif;
+          font-family: 'DM Sans', sans-serif;
+          font-family: 'IBM Plex Mono', monospace;
+          font-family: 'Montserrat', sans-serif;
+          font-family: 'Mukta', sans-serif;
+  
+          &:hover {
+            color: #9b9e9e;
+          }
+        }
+      }
+    }
+  }
+
+  
+  
