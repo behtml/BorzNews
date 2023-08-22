@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=DM+Sans:opsz,wght@9..40,300&family=IBM+Plex+Mono:wght@200&family=Montserrat&family=Mukta:wght@300&family=Oswald&display=swap");
 header {
   height: 60px;
   background-color: #333333;
@@ -44,10 +45,7 @@ footer {
   color: #ffffff;
   padding: 20px;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  min-width: 100%;
 }
 footer .footer-content {
   display: -webkit-box;
@@ -86,4 +84,41 @@ footer .footer-content .footer-links a {
 }
 footer .footer-content .footer-links a:hover {
   color: #9b9e9e;
+}
+
+div {
+  margin-top: 200px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+main a img {
+  margin-bottom: 0;
+}
+main p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Mukta", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-size: 100px;
 }
