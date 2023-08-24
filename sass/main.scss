@@ -27,8 +27,8 @@ header {
   color: $header-text-color;
   padding: 10px;
   align-items: center;
-  display: flex;
-  position: fixed;
+  display: inline-block;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
