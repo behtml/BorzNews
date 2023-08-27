@@ -102,6 +102,15 @@ footer {
   
           &:hover {
             color: #9b9e9e;
+            
+          svg{
+          .twitch{
+            &:hover{
+              transform: rotateX(50px);
+            }
+          }
+        }
+      
           }
         }
       }
